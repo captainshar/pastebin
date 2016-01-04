@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpunit/phpunit": "^5.1",
+        "phpdocumentor/phpdocumentor": "^2.8",
+        "twig/twig": "^1.23",
+        "gabordemooij/redbean": "^4.3"
+    }
+}
