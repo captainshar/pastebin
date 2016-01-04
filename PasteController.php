@@ -26,6 +26,15 @@ class PasteController
  
     public static function isValidPasteURI($uri)
     {
-        return true;
+        // if starts with / 
+        if(strpos($uri, "/") === 0)
+        {
+            $tmp = substr($uri, 1);
+ 
+            if(is_numeric($tmp))
+                return true;
+        }
+ 
+        return false;
     }
 }
