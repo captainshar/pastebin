@@ -26,4 +26,9 @@ class PasteControllerTest extends PHPUnit_Framework_TestCase
         $this->AssertFalse($temp);
  
     }
+    public function testShowPasteForm()
+    {
+        $this->expectOutputRegex("/<title>Paste It<\/title>/");
+        $this->ctrl->showPasteForm();
+    }
 }
